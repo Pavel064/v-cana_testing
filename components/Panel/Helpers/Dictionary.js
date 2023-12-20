@@ -84,9 +84,8 @@ function Dictionary() {
         .ilike('title', `${searchQuery}%`)
         .order('title', { ascending: true })
         .range(from, to)
-      if (data?.length) {
-        setWords({ data, count: wordsCount })
-      }
+
+      setWords({ data, count: wordsCount })
     }
   }
 
