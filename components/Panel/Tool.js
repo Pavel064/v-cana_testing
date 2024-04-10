@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next'
 
 import {
+  Aquifer,
   PersonalNotes,
   CommandEditor,
   BlindEditor,
@@ -159,6 +160,12 @@ function Tool({ config, toolName, tnLink, editable = false }) {
       config.tnLink = tnLink
 
       url = '/api/git/info'
+      break
+
+    case 'aquifer':
+      CurrentTool = Aquifer
+      title = t('aquifer')
+
       break
 
     default:

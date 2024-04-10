@@ -2,6 +2,9 @@
 const { i18n } = require('./next-i18next.config')
 const intranetOption = process.env.NEXT_PUBLIC_INTRANET ? { output: 'standalone' } : {}
 const nextConfig = {
+  images: {
+    domains: ['cdn.aquifer.bible'],
+  },
   reactStrictMode: true,
   ...intranetOption,
   transpilePackages: ['swagger-ui-react', 'swagger-client', 'react-syntax-highlighter'],
