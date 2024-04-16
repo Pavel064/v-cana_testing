@@ -29,6 +29,7 @@
     "@texttree/obs-format-convert-rcl": "^0.4.2",
     "@texttree/tn-quote": "^0.5.0",
     "@texttree/translation-words-helpers": "^0.2.4",
+    "@texttree/v-cana-rcl": "file:.yalc/@texttree/v-cana-rcl",
     "axios": "^0.27.2",
     "base64-arraybuffer": "^1.0.2",
     "file-saver": "^2.0.5",
