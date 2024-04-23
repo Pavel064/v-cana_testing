@@ -47,11 +47,13 @@
     "react-hot-toast": "^2.4.1",
     "react-i18next": "^13.0.2",
     "react-markdown": "^8.0.7",
+    "react-slick": "^0.30.2",
     "react-textarea-autosize": "^8.5.0",
     "recoil": "^0.7.7",
     "rehype-raw": "^6.1.1",
     "remark-gfm": "^3.0.1",
     "showdown": "^2.1.0",
+    "slick-carousel": "^1.8.1",
     "swagger-ui-react": "^5.1.0",
     "swr": "^2.2.0",
     "usfm-js": "^3.4.2"

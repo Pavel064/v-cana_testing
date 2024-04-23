@@ -616,3 +616,24 @@ export function useGetTheme() {
   }, [])
   return theme
 }
+
+export function useGetAquaphierImages({ config, verse }) {
+  const {
+    reference: { book, chapter },
+    // resource: { owner, repo, commit, bookPath },
+  } = config
+  // const params = { book, chapter, commit, bookPath, book, chapter, verses }
+  const fetcher = ([url]) => axios.get(url).then((res) => res.data)
+  console.log({ url: `/api/aquifer/${book}/${chapter}/${verse}/resources` })
+  const { isLoading, data, error } = useSWR(
+    book && chapter && verse
+      ? ['/api/aquifer/' + book + '/' + chapter + '/' + verse + '/resources']
+      : null,
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      revalidateIfStale: false,
+    }
+  )
+  return { isLoading, data: data || [], error }
+}

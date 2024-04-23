@@ -6,12 +6,11 @@ export default async function allresources(req, res) {
   switch (method) {
     case 'GET':
       try {
-        const image = await axios.get(url + query.id, {
+        const image = await axios.get(url + query.id + '?contentTextType=Markdown', {
           headers: {
             'api-key': apiKey,
           },
         })
-        // console.log(image)
         return res.status(200).json(image.data)
       } catch (error) {
         return res.status(404).json({ error })

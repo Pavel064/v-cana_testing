@@ -79,20 +79,21 @@
   scrollbar-color: var(--primary-100) var(--secondary-200);
 }
 
-  *::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 7px;
+    height: 7px;
     background:var(--secondary-200);
     border-radius: 10px
   }
 
-  *::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: var(--secondary-200);
     border-radius: 10px;
   }
 
-  *::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background-color: var(--primary-100);
-    border-radius: 10px
+    border-radius: 10px;
   }
 
   input[type="range"] {
@@ -423,3 +424,37 @@
 .not-found path:last-child {
 @apply  fill-th-primary-300
 }
+
+.scroll-container {
+
+  position: relative; /* Это необходимо для позиционирования псевдоэлемента */
+
+  display: flex; /* Сюда добавляем flex чтобы элементы выстроились в ряд */
+
+  overflow-x: auto; /* Горизонтальный скролл для контейнера */
+
+}
+
+
+
+.gradient-overlay {
+
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  bottom: 15px;
+
+  width: 20px; /* Ширина градиента */
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Градиент от прозрачного к белому */
+
+  pointer-events: none; /* Убираем взаимодействие с псевдоэлементом */
+
+}
+
+
