@@ -8,6 +8,7 @@
   "description": "App to translate Scripture step by step",
   "homepage": "https://v-cana.com/",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
