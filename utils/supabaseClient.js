@@ -1,12 +1,16 @@
-import { createBrowserClient } from '@supabase/ssr'
+import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs'
+import { useState } from 'react'
 
 function useSupabaseClient() {
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  const [supabaseClient] = useState(() =>
+    createPagesBrowserClient({
+      cookieOptions: {
+        name: process.env.NEXT_PUBLIC_COOKIE_NAME ?? 'sb-vcana-cookies',
+        sameSite: 'lax',
+      },
+    })
   )
-
-  return supabase
+  return supabaseClient
 }
 
 export default useSupabaseClient
