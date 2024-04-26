@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 
 import { useTranslation } from 'next-i18next'
-import i18nextConfig from 'next-i18next.config.cjs'
+import i18nextConfig from 'next-i18next.config.js'
 
 import { Menu } from '@headlessui/react'
 
