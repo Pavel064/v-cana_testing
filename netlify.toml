@@ -1,6 +1,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 [functions]
 directory = "netlify/functions"
 node_bundler = "esbuild"
