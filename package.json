@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && sed -i 's/\"type\": \"module\"/\"type\": \"commonjs\"/' package.json",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "@netlify/plugin-nextjs": "5.1.2",
+    "@netlify/plugin-nextjs": "4.1.1",
     "@svgr/webpack": "^8.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -78,6 +78,6 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "standard-version": "^9.5.0",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.4.3"
   }
 }
