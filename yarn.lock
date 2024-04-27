@@ -2375,10 +2375,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/opentelemetry-utils/-/opentelemetry-utils-1.2.0.tgz#81b157c18ac33f05252f9874f6659adedc79ff50"
   integrity sha512-sdeYmvUHXzs7bfoh7f32WVh2wLMOdF3d2Xdcg2FG1lCySXOJ4V6F3n8vPoPXwO7S5iSzJbfO2RPJsTtZCmbIcg==
 
-"@netlify/plugin-nextjs@5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-5.1.2.tgz#ecbe6ed3443e63b6ffa0a05d201a3cc4fa225fd3"
-  integrity sha512-rftBlZmrkxy8zeXZ/tT2u/v2iIZd9s0cV7MdtjUFOgizjhtY0fCZEUQ7OIEQIMogzGNMDXFcb84HXX9a8OZ8/w==
+"@netlify/plugin-nextjs@5.0.0-rc.1":
+  version "5.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-5.0.0-rc.1.tgz#e2c1e8b6da7549728261cf8cd6f18e99a407bda9"
+  integrity sha512-VrGZo0z2OVChgQWuVinVNFXycSVfvvzcnMVNuoi9cSyFCyoV0zETF4gRgb+uDjq3zio0Z9eKkM56CC7p3vaQ+A==
 
 "@netlify/plugins-list@^6.77.0":
   version "6.77.0"
