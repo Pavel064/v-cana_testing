@@ -38,6 +38,7 @@
     "js-yaml": "^4.1.0",
     "jszip": "^3.10.1",
     "localforage": "^1.10.0",
+    "netlify-cli": "^17.23.1",
     "next": "13.5.6",
     "next-i18next": "^14.0.0",
     "next-swagger-doc": "^0.4.0",
