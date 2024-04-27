@@ -59,7 +59,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "@netlify/plugin-nextjs": "3.9.2",
+    "@netlify/plugin-nextjs": "4.0.0",
     "@svgr/webpack": "^8.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
